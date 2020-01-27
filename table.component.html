@@ -1,0 +1,25 @@
+<h2>Employee Table</h2>
+<br/><br/>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 15px;}
+</style>
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>SALARY</th>
+      <th>DEPARTMENT</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let employee of empData">
+    <td>{{ employee.id }}</td>
+    <td>{{ employee.name }}</td>
+    <td>{{ employee.salary }}</td>
+    <td>{{ employee.department }}</td>
+  </tr>
+</table>
